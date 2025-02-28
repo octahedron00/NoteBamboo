@@ -1,0 +1,36 @@
+<resources>
+	<string name="app_name">대나무노트</string>
+	<string name="add_note_button">노트 추가</string>
+	<string name="id_hint">아이디</string>
+	<string name="password_hint">비밀번호</string>
+	<string name="login_button">로그인</string>
+	<string name="add_list_button">리스트 추가</string>
+	<string name="profile">프로필</string>
+	<string name="notification">리스트 초대 알림</string>
+	<string name="empty">(비어 있음)</string>
+	<string name="accept">승낙</string>
+	<string name="decline">거절</string>
+	<string name="nickname_hint">닉네임</string>
+	<string name="email_hint">이메일(선택)</string>
+	<string name="register_textView">여기를 눌러 <u>회원가입</u></string>
+	<string name="register_button">회원가입</string>
+	<string name="settings">설정</string>
+	<string name="settings_change_nickname">닉네임 변경</string>
+	<string name="settings_logout">로그아웃</string>
+	<string name="settings_share_settings">리스트 공유 설정</string>
+	<string name="settings_change_title">제목 변경</string>
+	<string name="settings_delete_this_list">리스트 삭제</string>
+	<string name="share_list">리스트 공유</string>
+	<string name="invite_button">초대</string>
+	<string name="share_add">Share Add</string>
+	<string name="search_id_button">아이디 검색</string>
+	<string name="confirm">전송</string>
+	<string name="version_list">버전 리스트</string>
+	<string name="alive_end_in_server">서버에 저장된 말단</string>
+	<string name="local_memory">내부 저장소</string>
+	<string name="no_version_saved">저장된 버전 없음</string>
+	<string name="check_delete">영구적으로 삭제됩니다.\n진행하시겠습니까?</string>
+	<string name="check_change">변화 사항이 저장되지 않습니다.\n진행하시겠습니까?</string>
+	<string name="input_the_title">제목을 입력하세요</string>
+	<string name="check_merge">위 버전과 가장 최근 버전이\n변화 사항과 함께 융합됩니다.\n진행하시겠습니까?</string>
+</resources>

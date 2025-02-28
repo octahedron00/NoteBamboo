@@ -1,0 +1,10 @@
+package com.octahedron00.notebamboo;
+
+public class Data {
+	public static int user_no;
+	public static byte[] user_key, iv, RSA_private;
+	public static byte[] iv_def = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+	public static String nickname;
+
+
+}

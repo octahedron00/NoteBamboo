@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".NoteEditActivity">
+
+	<LinearLayout
+		android:id="@+id/editBack"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:orientation="vertical"
+		app:layout_constraintBottom_toTopOf="@+id/colorSelect"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<ScrollView
+			android:id="@+id/editBackground"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:layout_width="match_parent"
+					android:layout_height="90dp">
+
+					<EditText
+						android:id="@+id/titleView"
+						android:layout_width="341dp"
+						android:layout_height="60dp"
+						android:ems="10"
+						android:gravity="center"
+						android:inputType="textPersonName"
+						android:textSize="30sp"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toStartOf="parent" />
+
+					<ImageView
+						android:id="@+id/imageSubmit"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="16dp"
+						android:layout_marginEnd="16dp"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintTop_toTopOf="parent"
+						app:srcCompat="@drawable/check" />
+
+					<ImageView
+						android:id="@+id/imageBack"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="16dp"
+						android:layout_marginTop="16dp"
+						app:layout_constraintStart_toStartOf="parent"
+						app:layout_constraintTop_toTopOf="parent"
+						app:srcCompat="@drawable/arrow" />
+
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+				<com.octahedron00.notebamboo.TextEditor
+					android:id="@+id/textInput"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="20dp"
+					android:background="@android:color/transparent"
+					android:ems="10"
+					android:inputType="textMultiLine"
+					android:text="LOADING..."
+					android:textColor="@android:color/primary_text_light"
+					android:textSize="20sp" />
+
+			</LinearLayout>
+		</ScrollView>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/colorSelect"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:background="#FAFAFA"
+		android:orientation="horizontal"
+		app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/colorLayout2"
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_margin="8dp"
+			android:layout_weight="1"
+			android:background="#E53A40"></androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/colorLayout3"
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_margin="8dp"
+			android:layout_weight="1"
+			android:background="#FC913A"></androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/colorLayout4"
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_margin="8dp"
+			android:layout_weight="1"
+			android:background="#EFEC05"></androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/colorLayout5"
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_margin="8dp"
+			android:layout_weight="1"
+			android:background="#75D701"></androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/colorLayout6"
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_margin="8dp"
+			android:layout_weight="1"
+			android:background="#33B9F1"></androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/colorLayout7"
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_margin="8dp"
+			android:layout_weight="1"
+			android:background="#0080FF"></androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/colorLayout1"
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_margin="8dp"
+			android:layout_weight="1"
+			android:background="#B980F0"></androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/colorLayout8"
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_margin="8dp"
+			android:layout_weight="1"
+			android:background="#FAFAFA"></androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/colorLayout9"
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_margin="8dp"
+			android:layout_weight="1"
+			android:background="#AAAAAA"></androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/colorLayout0"
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_margin="8dp"
+			android:layout_weight="1"
+			android:background="#000000"></androidx.constraintlayout.widget.ConstraintLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linearLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#FAFAFA"
+		android:orientation="horizontal"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent">
+
+		<Button
+			android:id="@+id/orient"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="-" />
+
+		<Button
+			android:id="@+id/bold"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="B" />
+
+		<Button
+			android:id="@+id/italic"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="I" />
+
+		<Button
+			android:id="@+id/underl"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="U" />
+
+		<Button
+			android:id="@+id/plus"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="S" />
+
+		<Button
+			android:id="@+id/highlight"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Col" />
+
+
+	</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
