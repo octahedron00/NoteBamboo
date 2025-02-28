@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".SettingsListActivity">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+
+			<TextView
+				android:id="@+id/SettingTitle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:gravity="center"
+				android:text="@string/settings"
+				android:textSize="30sp" />
+
+			<LinearLayout
+				android:id="@+id/share"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_margin="10dp"
+				android:background="#E4FFC9"
+				android:gravity="center"
+				android:onClick="share"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/shareText"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_margin="20dp"
+					android:layout_weight="1"
+					android:text="@string/settings_share_settings"
+					android:textSize="30sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/changeTitle"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_margin="10dp"
+				android:background="#C9FFF2"
+				android:gravity="center"
+				android:onClick="setTitle"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/changeTitleText"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_margin="20dp"
+					android:layout_weight="1"
+					android:text="@string/settings_change_title"
+					android:textSize="30sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/delete"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_margin="10dp"
+				android:background="#FFCFC9"
+				android:gravity="center"
+				android:onClick="delete"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/deleteText"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_margin="20dp"
+					android:layout_weight="1"
+					android:text="@string/settings_delete_this_list"
+					android:textSize="30sp" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

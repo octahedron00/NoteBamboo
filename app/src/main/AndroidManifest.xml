@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.octahedron00.notebamboo">
+
+	<uses-permission android:name="android.permission.INTERNET" />
+
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/icon_main"
+		android:label="@string/app_name"
+		android:networkSecurityConfig="@xml/network_security_config"
+		android:roundIcon="@drawable/icon_main"
+		android:supportsRtl="true"
+		android:versionName="@string/version"
+		android:theme="@style/AppTheme">
+		<activity android:name="com.octahedron00.notebamboo.VersionActivity" android:exported="true"/>
+		<activity android:name="com.octahedron00.notebamboo.NotificationActivity" android:exported="true"/>
+		<activity android:name="com.octahedron00.notebamboo.ShareAddActivity" android:exported="true"/>
+		<activity android:name="com.octahedron00.notebamboo.ShareActivity" android:exported="true"/>
+		<activity android:name="com.octahedron00.notebamboo.SettingsListActivity" android:exported="true"/>
+		<activity android:name="com.octahedron00.notebamboo.NoteEditActivity" android:exported="true"/>
+		<activity android:name="com.octahedron00.notebamboo.NoteReadActivity" android:exported="true"/>
+		<activity android:name="com.octahedron00.notebamboo.ListActivity" android:exported="true"/>
+		<activity android:name="com.octahedron00.notebamboo.SettingsActivity" android:exported="true"/>
+		<activity android:name="com.octahedron00.notebamboo.RegisterActivity" android:exported="true"/>
+		<activity android:name="com.octahedron00.notebamboo.LoginActivity" android:exported="true"/>
+		<activity android:name="com.octahedron00.notebamboo.MainActivity" android:exported="true">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<uses-library
+			android:name="org.apache.http.legacy"
+			android:required="false" />
+	</application>
+
+</manifest>
